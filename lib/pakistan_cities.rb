@@ -1,8 +1,9 @@
 require "pakistan_cities/version"
-require "yaml"
+require 'yaml'
 
 module PakistanCities
-  @@all_cities = YAML::load_file(File.join(File.dirname(__FILE__), 'pakistan_cities.yml'))
+
+  @@all_cities = YAML::load_file(File.join(File.dirname(__FILE__),'../config/data.yml'))
 
   def self.get_balochistan_cities
     get_province_cities("balochistan")
@@ -29,4 +30,4 @@ module PakistanCities
   end
 end
 
-PakistanCities::get_all_cities
+PakistanCities::get_province_cities('sindh')

@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Zunair Minhas"]
   spec.email         = ["zunair.minhas@tkxel.com"]
   spec.summary       = %q{Show all cities of Pakistan.}
-  spec.description   = %q{Show all cities of Pakistan.}
+  spec.description   = %q{Show all cities of Pakistan. You can also get city by their province name}
   spec.homepage      = ""
   spec.license       = "MIT"
 
